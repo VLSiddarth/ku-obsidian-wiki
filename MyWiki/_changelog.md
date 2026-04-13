@@ -66,3 +66,23 @@
 - `2026-04-13 09:25` **BUILD**: ChemGraph as an agentic framework for computational chemistry workflows → `wiki\chemgraph-as-an-agentic-framework-for-computational-chemistry-workflows.md`
 - `2026-04-13 09:25` **BUILD**: How to enable Firebase Authentication and add providers using the CLI → `wiki\how-to-enable-firebase-authentication-and-add-providers-using-the-cli.md`
 - `2026-04-13 09:25` **BUILD**: ChengyouJia/agentic-critic-dataset → `wiki\chengyoujiaagentic-critic-dataset.md`
+- `2026-04-13 09:39` **BUILD**: A Survey on Agent Workflow -- Status and Future → `wiki\a-survey-on-agent-workflow-status-and-future.md`
+- `2026-04-13 09:39` **BUILD**: Transforming Media and Entertainment Workflows with Agentic AI → `wiki\transforming-media-and-entertainment-workflows-with-agentic-ai.md`
+- `2026-04-13 09:39` **BUILD**: What are the best-practice architectural workflows for LLM-based contract compliance agents? → `wiki\what-are-the-best-practice-architectural-workflows-for-llm-based-contract-compli.md`
+- `2026-04-13 09:39` **BUILD**: DON&#39;T Build AI Automations, Build Agentic Workflows Instead! (Claude Code) → `wiki\don39t-build-ai-automations-build-agentic-workflows-instead-claude-code.md`
+- `2026-04-13 09:39` **BUILD**: yatin-superintelligence/Creative-Professionals-Agentic-Tasks-1M → `wiki\yatin-superintelligencecreative-professionals-agentic-tasks-1m.md`
+- `2026-04-13 09:39` **BUILD**: saturndec/waoowaoo → `wiki\saturndecwaoowaoo.md`
+- `2026-04-13 09:39` **BUILD**: Efficient LLM Serving for Agentic Workflows: A Data Systems Perspective → `wiki\efficient-llm-serving-for-agentic-workflows-a-data-systems-perspective.md`
+- `2026-04-13 09:39` **BUILD**: ChemGraph as an agentic framework for computational chemistry workflows → `wiki\chemgraph-as-an-agentic-framework-for-computational-chemistry-workflows.md`
+- `2026-04-13 09:39` **BUILD**: How to enable Firebase Authentication and add providers using the CLI → `wiki\how-to-enable-firebase-authentication-and-add-providers-using-the-cli.md`
+- `2026-04-13 09:39` **BUILD**: ChengyouJia/agentic-critic-dataset → `wiki\chengyoujiaagentic-critic-dataset.md`
+- `2026-04-13 12:53` **BUILD**: A Survey on Agent Workflow -- Status and Future → `wiki\a-survey-on-agent-workflow-status-and-future.md`
+- `2026-04-13 12:53` **BUILD**: Transforming Media and Entertainment Workflows with Agentic AI → `wiki\transforming-media-and-entertainment-workflows-with-agentic-ai.md`
+- `2026-04-13 12:53` **BUILD**: What are the best-practice architectural workflows for LLM-based contract compliance agents? → `wiki\what-are-the-best-practice-architectural-workflows-for-llm-based-contract-compli.md`
+- `2026-04-13 12:53` **BUILD**: DON&#39;T Build AI Automations, Build Agentic Workflows Instead! (Claude Code) → `wiki\don39t-build-ai-automations-build-agentic-workflows-instead-claude-code.md`
+- `2026-04-13 12:53` **BUILD**: yatin-superintelligence/Creative-Professionals-Agentic-Tasks-1M → `wiki\yatin-superintelligencecreative-professionals-agentic-tasks-1m.md`
+- `2026-04-13 12:53` **BUILD**: saturndec/waoowaoo → `wiki\saturndecwaoowaoo.md`
+- `2026-04-13 12:53` **BUILD**: Efficient LLM Serving for Agentic Workflows: A Data Systems Perspective → `wiki\efficient-llm-serving-for-agentic-workflows-a-data-systems-perspective.md`
+- `2026-04-13 12:53` **BUILD**: ChemGraph as an agentic framework for computational chemistry workflows → `wiki\chemgraph-as-an-agentic-framework-for-computational-chemistry-workflows.md`
+- `2026-04-13 12:53` **BUILD**: How to enable Firebase Authentication and add providers using the CLI → `wiki\how-to-enable-firebase-authentication-and-add-providers-using-the-cli.md`
+- `2026-04-13 12:53` **BUILD**: ChengyouJia/agentic-critic-dataset → `wiki\chengyoujiaagentic-critic-dataset.md`

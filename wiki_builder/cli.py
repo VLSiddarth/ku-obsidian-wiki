@@ -126,7 +126,7 @@ def init(vault: str, api_key: str):
 
 ku_api_key = "{api_key or "YOUR_KU_API_KEY_HERE"}"
 vault_path = "{vault_path}"
-gemini_key = os.environ.get("GEMINI_API_KEY") or config.get("gemini_api_key")
+anthropic_key = os.environ.get("ANTHROPIC_API_KEY") or config.get("anthropic_key")
 
 # Default settings
 default_difficulty = 3
@@ -154,7 +154,7 @@ update_interval = "weekly"  # "daily" | "weekly"
 @click.argument("topic")
 @click.option("--vault", envvar="KU_WIKI_VAULT", help="Path to Obsidian vault")
 @click.option("--api-key", envvar="KU_API_KEY", help="Knowledge Universe API key")
-@click.option("--gemini-key", envvar="GEMINI_API_KEY", help="Gemini API key for LLM compilation")
+@click.option("--anthropic-key", envvar="ANTHROPIC_API_KEY", help="Anthropic API key for LLM compilation")
 @click.option("--difficulty", default=3, type=click.IntRange(1, 5), show_default=True, help="Source difficulty (1=beginner, 5=expert)")
 @click.option("--formats", default=None, help="Comma-separated formats: pdf,github,html,video,jupyter,stackoverflow")
 @click.option("--max-results", default=10, show_default=True, help="Max sources to retrieve")
@@ -164,7 +164,7 @@ def build(
     topic: str,
     vault: Optional[str],
     api_key: Optional[str],
-    gemini_key: Optional[str],
+    anthropic_key: Optional[str],
     difficulty: int,
     formats: Optional[str],
     max_results: int,
@@ -183,11 +183,11 @@ def build(
     cfg = load_config(config)
     vault_str = get_vault(cfg, vault)
     ku = get_client(cfg, api_key)
-    gemini_key = gemini_key or cfg.get("gemini_api_key") or os.environ.get("GEMINI_API_KEY")
+    anthropic_key = anthropic_key or cfg.get("anthropic_key") or os.environ.get("ANTHROPIC_API_KEY")
 
     vault_path = Path(vault_str).expanduser().resolve()
     writer = VaultWriter(vault_path)
-    compiler = WikiCompiler(gemini_api_key=gemini_key)
+    compiler = WikiCompiler(anthropic_api_key=anthropic_key)
     graph = WikilinkGraph(vault_path / "wiki")
 
     formats_list = formats.split(",") if formats else cfg.get(
@@ -200,7 +200,7 @@ def build(
     console.print(Panel.fit(
         f"[bold cyan]Building wiki for:[/bold cyan] [white]{topic}[/white]\n"
         f"Vault: {vault_path}  |  Difficulty: {difficulty}  |  "
-        f"LLM: {'Gemini API' if compiler.has_llm else 'template mode'}",
+        f"LLM: {'Anthropic API' if compiler.has_llm else 'template mode'}",
         border_style="cyan"
     ))
     console.print()
@@ -295,14 +295,14 @@ def build(
 @main.command()
 @click.option("--vault", envvar="KU_WIKI_VAULT", help="Path to Obsidian vault")
 @click.option("--api-key", envvar="KU_API_KEY", help="Knowledge Universe API key")
-@click.option("--gemini-key", envvar="GEMINI_API_KEY", help="Gemini API key")
+@click.option("--anthropic-key", envvar="ANTHROPIC_API_KEY", help="Anthropic API key")
 @click.option("--since-days", default=7, show_default=True, help="Look back N days for new sources")
 @click.option("--config", default=None, help="Path to .ku-wiki.toml")
 @click.option("--webhook", default=None, help="Slack/Discord webhook URL for notifications")
 def update(
     vault: Optional[str],
     api_key: Optional[str],
-    gemini_key: Optional[str],
+    anthropic_key: Optional[str],
     since_days: int,
     config: Optional[str],
     webhook: Optional[str],
@@ -321,12 +321,12 @@ def update(
     cfg = load_config(config)
     vault_str = get_vault(cfg, vault)
     ku = get_client(cfg, api_key)
-    gemini_key = gemini_key or cfg.get("gemini_api_key") or os.environ.get("GEMINI_API_KEY")
+    anthropic_key = anthropic_key or cfg.get("anthropic_key") or os.environ.get("ANTHROPIC_API_KEY")
     webhook_url = webhook or cfg.get("webhook_url")
 
     vault_path = Path(vault_str).expanduser().resolve()
     writer = VaultWriter(vault_path)
-    compiler = WikiCompiler(gemini_api_key=gemini_key)
+    compiler = WikiCompiler(anthropic_api_key=anthropic_key)
     graph = WikilinkGraph(vault_path / "wiki")
     digest_gen = DigestGenerator()
 

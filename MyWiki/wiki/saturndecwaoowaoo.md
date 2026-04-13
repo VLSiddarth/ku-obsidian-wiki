@@ -13,9 +13,9 @@ ku_source_id: "github:saturndec/waoowaoo"
 ku_platform: github
 ku_url: "https://github.com/saturndec/waoowaoo"
 ku_quality: 7.9
-ku_decay: 0.265
+ku_decay: 0.268
 ku_freshness: aging
-ku_age_days: 80
+ku_age_days: 81
 ku_authors:
   - saturndec
 ku_compiled: 2026-04-13
@@ -28,7 +28,7 @@ ku_last_updated: 2026-04-13
 controllable film & video production. From shorts to live-action with Hollywood-
 standard workflows.
 
-> Source freshness: **aging** (80 days old, decay score 0.27)
+> Source freshness: **aging** (81 days old, decay score 0.27)
 
 ## Source details
 
