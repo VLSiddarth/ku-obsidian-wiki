@@ -1,0 +1,68 @@
+- `2026-04-12 13:10` **BUILD**: Enhancing Granular Sentiment Classification with Chain-of-Thought Prompting in Large Language Models → `wiki\enhancing-granular-sentiment-classification-with-chain-of-thought-prompting-in-l.md`
+- `2026-04-12 13:10` **BUILD**: mattwesney/General_Inquiry_Thinking-Chain-Of-Thought → `wiki\mattwesneygeneral-inquiry-thinking-chain-of-thought.md`
+- `2026-04-12 13:10` **BUILD**: Chain-of-Thought Prompting - Explained → `wiki\chain-of-thought-prompting-explained.md`
+- `2026-04-12 13:10` **BUILD**: Personalized Recommendation Framework Using Large Language Model and Chain-of-thought Prompting: A Case Study of a Computer Programming Course → `wiki\personalized-recommendation-framework-using-large-language-model-and-chain-of-th.md`
+- `2026-04-12 13:10` **BUILD**: Prompt engineering → `wiki\prompt-engineering.md`
+- `2026-04-12 13:10` **BUILD**: habedi/cogitator → `wiki\habedicogitator.md`
+- `2026-04-12 13:10` **BUILD**: GCoT: Chain-of-Thought Prompt Learning for Graphs → `wiki\gcot-chain-of-thought-prompt-learning-for-graphs.md`
+- `2026-04-12 13:10` **BUILD**: leduckhai/S-Chain → `wiki\leduckhais-chain.md`
+- `2026-04-12 13:10` **BUILD**: Enhancing Chain of Thought Prompting in Large Language Models via Reasoning Patterns → `wiki\enhancing-chain-of-thought-prompting-in-large-language-models-via-reasoning-patt.md`
+- `2026-04-13 03:47` **BUILD**: DON&#39;T Build AI Automations, Build Agentic Workflows Instead! (Claude Code) → `wiki\don39t-build-ai-automations-build-agentic-workflows-instead-claude-code.md`
+- `2026-04-13 03:47` **BUILD**: Many-Tier Instruction Hierarchy in LLM Agents → `wiki\many-tier-instruction-hierarchy-in-llm-agents.md`
+- `2026-04-13 04:35` **BUILD**: Prompt Engineering Best Practices  → `wiki\prompt-engineering-best-practices.md`
+- `2026-04-13 04:35` **BUILD**: A Systematic Survey of Automatic Prompt Optimization Techniques → `wiki\a-systematic-survey-of-automatic-prompt-optimization-techniques.md`
+- `2026-04-13 04:35` **BUILD**: PromptEval/PromptEval_MMLU_full → `wiki\promptevalprompteval-mmlu-full.md`
+- `2026-04-13 04:35` **BUILD**: nati112/prompt-architect → `wiki\nati112prompt-architect.md`
+- `2026-04-13 04:35` **BUILD**: Prompt Engineering Best Practices: Text Expansion → `wiki\prompt-engineering-best-practices-text-expansion.md`
+- `2026-04-13 04:35` **BUILD**: Local Prompt Optimization → `wiki\local-prompt-optimization.md`
+- `2026-04-13 05:02` **BUILD**: Prompt Engineering Best Practices  → `wiki\prompt-engineering-best-practices.md`
+- `2026-04-13 05:02` **BUILD**: A Systematic Survey of Automatic Prompt Optimization Techniques → `wiki\a-systematic-survey-of-automatic-prompt-optimization-techniques.md`
+- `2026-04-13 05:02` **BUILD**: Many-Tier Instruction Hierarchy in LLM Agents → `wiki\many-tier-instruction-hierarchy-in-llm-agents.md`
+- `2026-04-13 05:02` **BUILD**: PromptEval/PromptEval_MMLU_full → `wiki\promptevalprompteval-mmlu-full.md`
+- `2026-04-13 05:02` **BUILD**: nati112/prompt-architect → `wiki\nati112prompt-architect.md`
+- `2026-04-13 05:02` **BUILD**: Prompt Engineering Best Practices: Text Expansion → `wiki\prompt-engineering-best-practices-text-expansion.md`
+- `2026-04-13 05:02` **BUILD**: Local Prompt Optimization → `wiki\local-prompt-optimization.md`
+- `2026-04-13 05:06` **BUILD**: Prompt Engineering Best Practices  → `wiki\prompt-engineering-best-practices.md`
+- `2026-04-13 05:06` **BUILD**: A Systematic Survey of Automatic Prompt Optimization Techniques → `wiki\a-systematic-survey-of-automatic-prompt-optimization-techniques.md`
+- `2026-04-13 05:07` **BUILD**: Many-Tier Instruction Hierarchy in LLM Agents → `wiki\many-tier-instruction-hierarchy-in-llm-agents.md`
+- `2026-04-13 05:07` **BUILD**: PromptEval/PromptEval_MMLU_full → `wiki\promptevalprompteval-mmlu-full.md`
+- `2026-04-13 05:07` **BUILD**: nati112/prompt-architect → `wiki\nati112prompt-architect.md`
+- `2026-04-13 05:07` **BUILD**: Prompt Engineering Best Practices: Text Expansion → `wiki\prompt-engineering-best-practices-text-expansion.md`
+- `2026-04-13 05:07` **BUILD**: Local Prompt Optimization → `wiki\local-prompt-optimization.md`
+- `2026-04-13 05:14` **BUILD**: Prompt Engineering Best Practices  → `wiki\prompt-engineering-best-practices.md`
+- `2026-04-13 05:14` **BUILD**: A Systematic Survey of Automatic Prompt Optimization Techniques → `wiki\a-systematic-survey-of-automatic-prompt-optimization-techniques.md`
+- `2026-04-13 05:15` **BUILD**: Many-Tier Instruction Hierarchy in LLM Agents → `wiki\many-tier-instruction-hierarchy-in-llm-agents.md`
+- `2026-04-13 05:15` **BUILD**: PromptEval/PromptEval_MMLU_full → `wiki\promptevalprompteval-mmlu-full.md`
+- `2026-04-13 05:16` **BUILD**: nati112/prompt-architect → `wiki\nati112prompt-architect.md`
+- `2026-04-13 05:16` **BUILD**: Prompt Engineering Best Practices: Text Expansion → `wiki\prompt-engineering-best-practices-text-expansion.md`
+- `2026-04-13 05:16` **BUILD**: Local Prompt Optimization → `wiki\local-prompt-optimization.md`
+- `2026-04-13 05:22` **BUILD**: A Survey on Agent Workflow -- Status and Future → `wiki\a-survey-on-agent-workflow-status-and-future.md`
+- `2026-04-13 05:23` **BUILD**: Transforming Media and Entertainment Workflows with Agentic AI → `wiki\transforming-media-and-entertainment-workflows-with-agentic-ai.md`
+- `2026-04-13 05:23` **BUILD**: What are the best-practice architectural workflows for LLM-based contract compliance agents? → `wiki\what-are-the-best-practice-architectural-workflows-for-llm-based-contract-compli.md`
+- `2026-04-13 05:23` **BUILD**: DON&#39;T Build AI Automations, Build Agentic Workflows Instead! (Claude Code) → `wiki\don39t-build-ai-automations-build-agentic-workflows-instead-claude-code.md`
+- `2026-04-13 05:24` **BUILD**: yatin-superintelligence/Creative-Professionals-Agentic-Tasks-1M → `wiki\yatin-superintelligencecreative-professionals-agentic-tasks-1m.md`
+- `2026-04-13 05:24` **BUILD**: saturndec/waoowaoo → `wiki\saturndecwaoowaoo.md`
+- `2026-04-13 05:25` **BUILD**: Many-Tier Instruction Hierarchy in LLM Agents → `wiki\many-tier-instruction-hierarchy-in-llm-agents.md`
+- `2026-04-13 05:25` **BUILD**: Efficient LLM Serving for Agentic Workflows: A Data Systems Perspective → `wiki\efficient-llm-serving-for-agentic-workflows-a-data-systems-perspective.md`
+- `2026-04-13 05:25` **BUILD**: ChemGraph as an agentic framework for computational chemistry workflows → `wiki\chemgraph-as-an-agentic-framework-for-computational-chemistry-workflows.md`
+- `2026-04-13 05:25` **BUILD**: How to enable Firebase Authentication and add providers using the CLI → `wiki\how-to-enable-firebase-authentication-and-add-providers-using-the-cli.md`
+- `2026-04-13 08:55` **BUILD**: A Survey on Agent Workflow -- Status and Future → `wiki\a-survey-on-agent-workflow-status-and-future.md`
+- `2026-04-13 08:55` **BUILD**: Transforming Media and Entertainment Workflows with Agentic AI → `wiki\transforming-media-and-entertainment-workflows-with-agentic-ai.md`
+- `2026-04-13 08:55` **BUILD**: What are the best-practice architectural workflows for LLM-based contract compliance agents? → `wiki\what-are-the-best-practice-architectural-workflows-for-llm-based-contract-compli.md`
+- `2026-04-13 08:55` **BUILD**: DON&#39;T Build AI Automations, Build Agentic Workflows Instead! (Claude Code) → `wiki\don39t-build-ai-automations-build-agentic-workflows-instead-claude-code.md`
+- `2026-04-13 08:55` **BUILD**: yatin-superintelligence/Creative-Professionals-Agentic-Tasks-1M → `wiki\yatin-superintelligencecreative-professionals-agentic-tasks-1m.md`
+- `2026-04-13 08:55` **BUILD**: saturndec/waoowaoo → `wiki\saturndecwaoowaoo.md`
+- `2026-04-13 08:55` **BUILD**: Efficient LLM Serving for Agentic Workflows: A Data Systems Perspective → `wiki\efficient-llm-serving-for-agentic-workflows-a-data-systems-perspective.md`
+- `2026-04-13 08:55` **BUILD**: ChemGraph as an agentic framework for computational chemistry workflows → `wiki\chemgraph-as-an-agentic-framework-for-computational-chemistry-workflows.md`
+- `2026-04-13 08:55` **BUILD**: How to enable Firebase Authentication and add providers using the CLI → `wiki\how-to-enable-firebase-authentication-and-add-providers-using-the-cli.md`
+- `2026-04-13 08:55` **BUILD**: ChengyouJia/agentic-critic-dataset → `wiki\chengyoujiaagentic-critic-dataset.md`
+- `2026-04-13 09:25` **BUILD**: A Survey on Agent Workflow -- Status and Future → `wiki\a-survey-on-agent-workflow-status-and-future.md`
+- `2026-04-13 09:25` **BUILD**: Transforming Media and Entertainment Workflows with Agentic AI → `wiki\transforming-media-and-entertainment-workflows-with-agentic-ai.md`
+- `2026-04-13 09:25` **BUILD**: What are the best-practice architectural workflows for LLM-based contract compliance agents? → `wiki\what-are-the-best-practice-architectural-workflows-for-llm-based-contract-compli.md`
+- `2026-04-13 09:25` **BUILD**: DON&#39;T Build AI Automations, Build Agentic Workflows Instead! (Claude Code) → `wiki\don39t-build-ai-automations-build-agentic-workflows-instead-claude-code.md`
+- `2026-04-13 09:25` **BUILD**: yatin-superintelligence/Creative-Professionals-Agentic-Tasks-1M → `wiki\yatin-superintelligencecreative-professionals-agentic-tasks-1m.md`
+- `2026-04-13 09:25` **BUILD**: saturndec/waoowaoo → `wiki\saturndecwaoowaoo.md`
+- `2026-04-13 09:25` **BUILD**: Efficient LLM Serving for Agentic Workflows: A Data Systems Perspective → `wiki\efficient-llm-serving-for-agentic-workflows-a-data-systems-perspective.md`
+- `2026-04-13 09:25` **BUILD**: ChemGraph as an agentic framework for computational chemistry workflows → `wiki\chemgraph-as-an-agentic-framework-for-computational-chemistry-workflows.md`
+- `2026-04-13 09:25` **BUILD**: How to enable Firebase Authentication and add providers using the CLI → `wiki\how-to-enable-firebase-authentication-and-add-providers-using-the-cli.md`
+- `2026-04-13 09:25` **BUILD**: ChengyouJia/agentic-critic-dataset → `wiki\chengyoujiaagentic-critic-dataset.md`
