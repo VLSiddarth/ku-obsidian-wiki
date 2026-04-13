@@ -10,4 +10,4 @@ __pycache__/
 venv/
 
 # Test Vault (Optional: keeps your personal wiki from uploading)
-MyWiki/
+MyWiki/.env
