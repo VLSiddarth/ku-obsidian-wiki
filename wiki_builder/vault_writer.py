@@ -224,7 +224,7 @@ class VaultWriter:
         state_path = self.vault / STATE_FILE
         state["last_update"] = datetime.utcnow().isoformat()
         state["article_count"] = len(list(self.wiki_dir.glob("*.md")))
-        state_path.write_text(json.dumps(state, indent=2))
+        state_path.write_text(json.dumps(state, indent=2), encoding="utf-8")
 
     def record_topic(self, topic: str, source_count: int, coverage_score: float):
         """Record that a topic was built — for update tracking."""
@@ -248,10 +248,10 @@ class VaultWriter:
         entry = f"- `{timestamp}` **{action}**: {title} → `{path}`\n"
 
         if not changelog.exists():
-            changelog.write_text("# Wiki changelog\n\n" + entry)
+            changelog.write_text("# Wiki changelog\n\n" + entry, encoding="utf-8")
         else:
             existing = changelog.read_text(encoding="utf-8")
-            changelog.write_text(existing + entry)
+            changelog.write_text(existing + entry, encoding="utf-8")
 
     # ─── Utilities ────────────────────────────────────────────────────────────
 

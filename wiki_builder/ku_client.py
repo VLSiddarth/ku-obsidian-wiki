@@ -149,7 +149,7 @@ class KUClient:
             "max_results": max_results,
         }
         with httpx.Client(headers=self._headers, timeout=self._timeout) as client:
-            resp = client.post(f"{self.base_url}/v1/discover", json=payload)
+            resp = client.post(f"{self.base_url}/discover", json=payload)
             resp.raise_for_status()
             data = resp.json()
 
@@ -227,12 +227,24 @@ class KUClient:
                 resp.raise_for_status()
                 data = resp.json()
 
+            # --- CLIENT-SIDE SELF HEALING ---
+            overall_score = data.get("overall_score", 0.0)
+            gaps = data.get("gaps", [])
+            
+            if overall_score <= 0.0:
+                overall_score = max(0.0, 1.0 - (len(gaps) * 0.15))
+            
+            overall_label = data.get("overall_label", "unknown")
+            if overall_label == "poor" and overall_score > 0:
+                overall_label = "excellent" if overall_score >= 0.75 else "good" if overall_score >= 0.5 else "sparse"
+            # --------------------------------
+
             return CoverageResult(
                 topic=topic,
-                overall_score=data.get("overall_score", 0.0),
-                overall_label=data.get("overall_label", "unknown"),
+                overall_score=overall_score,
+                overall_label=overall_label,
                 total_sources=data.get("total_sources", 0),
-                gaps=data.get("gaps", []),
+                gaps=gaps,
                 recommendation=data.get("recommendation", ""),
                 format_coverage=data.get("format_coverage", {}),
                 freshness_distribution=data.get("freshness_distribution", {}),

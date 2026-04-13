@@ -2,7 +2,7 @@
 compiler.py — LLM compilation engine.
 
 The LLM is the compiler. Raw sources go in. Wiki articles come out.
-Uses Claude API (claude-sonnet-4-20250514) or falls back to a template-only mode.
+Uses Gemini API (gemini-1.5-flash) or falls back to a template-only mode.
 
 Karpathy's principle: "Drop files in a folder, the LLM compiles them
 into a living, interlinked Wikipedia."
@@ -15,6 +15,7 @@ from __future__ import annotations
 import os
 import re
 import textwrap
+import time
 from datetime import date
 from typing import Optional
 
@@ -82,18 +83,23 @@ class WikiCompiler:
     """
     Compiles KU sources into Obsidian-ready Markdown wiki articles.
 
-    Requires ANTHROPIC_API_KEY in environment for full LLM compilation.
+    Requires GEMINI_API_KEY in environment for full LLM compilation.
     Falls back to template mode if the API key is not set.
     """
 
-    def __init__(self, anthropic_api_key: Optional[str] = None):
-        self.api_key = anthropic_api_key or os.environ.get("ANTHROPIC_API_KEY", "")
+    def __init__(self, gemini_api_key: Optional[str] = None):
+        self.api_key = gemini_api_key or os.environ.get("GEMINI_API_KEY", "")
         self._client = None
 
         if self.api_key:
             try:
-                import anthropic
-                self._client = anthropic.Anthropic(api_key=self.api_key)
+                import google.generativeai as genai
+                genai.configure(api_key=self.api_key)
+                # Initialize the incredibly fast 1.5 Flash model
+                self._client = genai.GenerativeModel(
+                    'gemini-2.5-flash',
+                    system_instruction=SYSTEM_PROMPT
+                )
             except ImportError:
                 self._client = None
 
@@ -120,21 +126,23 @@ class WikiCompiler:
         return f"{frontmatter}\n\n{body}\n"
 
     def _compile_with_llm(self, source: KUSource, existing_titles: list[str]) -> str:
-        """Call Claude API to synthesize the article body."""
+        """Call Gemini API to synthesize the article body."""
         try:
-            message = self._client.messages.create(
-                model="claude-sonnet-4-20250514",
-                max_tokens=1000,
-                system=SYSTEM_PROMPT,
-                messages=[
-                    {"role": "user", "content": _build_user_prompt(source, existing_titles)}
-                ],
-            )
-            body = message.content[0].text.strip()
+            import time # Ensure time is imported
+            prompt = _build_user_prompt(source, existing_titles)
+            response = self._client.generate_content(prompt)
+            body = response.text.strip()
             # Inject wikilinks for known titles that appear plainly
             body = self._inject_wikilinks(body, existing_titles)
+            
+            # Slow down to respect the 5 Requests Per Minute limit
+            print("   [⏳ Sleeping 15s to respect Gemini API limits...]")
+            time.sleep(15) 
+            
             return body
         except Exception as e:
+            print(f"\n[!] Gemini Failed: {e}")
+            # Fall back to template if rate-limited or errors out
             return self._compile_template(source, existing_titles)
 
     def _compile_template(self, source: KUSource, existing_titles: list[str]) -> str:

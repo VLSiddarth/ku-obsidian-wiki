@@ -1,0 +1,13 @@
+# Security
+.env
+.ku-wiki.toml
+.ku-wiki-state.json
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Test Vault (Optional: keeps your personal wiki from uploading)
+MyWiki/
